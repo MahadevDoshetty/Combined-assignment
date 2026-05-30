@@ -9,5 +9,10 @@
 // Example Output 2: 7
 // Example Input 3: []
 // Example Output 3: Throws an error: "Array cannot be empty"
-
-
+export function findMinimumValue(arr: Number[]): Number {
+    if (arr.length == 0) {
+        throw new Error("Array cannot be empty")
+    }
+    const result = arr.sort((a: any, b: any) => a - b);
+    return result[0];
+}

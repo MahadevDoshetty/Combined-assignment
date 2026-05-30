@@ -4,3 +4,10 @@
 // Example Input: num = 15, divisor = 5
 // Example Output: true
 
+const checkMultiple = (num: number, divisor: number): Boolean => {
+    if (num % divisor == 0) {
+        return true
+    } else {
+        return false
+    }
+}

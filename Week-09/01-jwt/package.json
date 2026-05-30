@@ -1,18 +1,21 @@
 {
-  "name": "02-jwt",
+  "name": "01-jwt",
   "version": "1.0.0",
-  "description": "",
+  "description": "Follow these simple steps to get your project running and tested.",
   "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test-jwt": "jest ./tests/index.spec.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
-    "jest": "^29.7.0",
-    "jsonwebtoken": "^9.0.2",
-    "zod": "^3.22.4"
+    "express": "^5.2.1",
+    "jest": "^30.4.2",
+    "jsonwebtoken": "^9.0.3"
   }
 }

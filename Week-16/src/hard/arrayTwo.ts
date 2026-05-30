@@ -19,3 +19,12 @@
 //     { name: "Charlie", age: 22, country: "India" }
 //   ]
 
+export function filterUsersByCountry(arr: Object[], country:string): Object[] {
+    const indians: Object[] = [];
+    arr.forEach((obj: any) => {
+        if (obj.country == country) {
+            indians.push(obj)
+        }
+    });
+    return indians;
+}
